@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Artist Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Information</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="order">
+            <h1>Place Your Order</h1>
+            <p>Fill out the form below to order a custom painting.</p>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="canvas-size">Choose Canvas Size:</label>
+                <select id="canvas-size" name="canvas-size" required>
+                    <option value="11x14">11x14" ($150)</option>
+                    <option value="8x10">8x10" ($100)</option>
+                </select>
+                
+                <label for="pets">Number of Pets:</label>
+                <select id="pets" name="pets" required>
+                    <option value="1">1 Pet (included)</option>
+                    <option value="2">2 Pets (+$50)</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="number" id="other-pets" name="other-pets" placeholder="Enter number of pets" style="display: none;">
+                
+                <p id="price">Total Price: $0</p>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 [Artist Name]. All Rights Reserved.</p>
+    </footer>
+    <script src="order.js"></script>
+</body>
+</html>
